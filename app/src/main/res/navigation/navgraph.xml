@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/login2">
+
+    <!-- ✅ Login Fragment -->
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.matala3.fragments.login"
+        android:label="login" >
+        <action
+            android:id="@+id/action_login2_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login2_to_home_page"
+            app:destination="@id/home_page" />
+    </fragment>
+
+    <!-- ✅ Register Fragment -->
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.matala3.fragments.register"
+        android:label="register" >
+        <action
+            android:id="@+id/action_register_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+
+    <!-- ✅ Home Page Fragment -->
+    <fragment
+        android:id="@+id/home_page"
+        android:name="com.example.matala3.fragments.home_page"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_home_page_to_productListFragment"
+            app:destination="@id/productListFragment" />
+    </fragment>
+
+    <!-- ✅ Product List Fragment -->
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.matala3.fragments.ProductListFragment"
+        android:label="ProductListFragment"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_productListFragment_to_home_page"
+            app:destination="@id/home_page" />
+    </fragment>
+
+</navigation>

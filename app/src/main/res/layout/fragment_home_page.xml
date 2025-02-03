@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- ✅ Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- ✅ Display User's Phone Number -->
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- ✅ Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- ✅ Add Product Button -->
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- ✅ Remove Product Button -->
+    <Button
+        android:id="@+id/btnRemoveProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Product"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- ✅ RecyclerView for Product List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>
+

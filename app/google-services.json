@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454665007612",
+    "project_id": "shopemarket-c2e67",
+    "storage_bucket": "shopemarket-c2e67.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454665007612:android:443fb5d0f7d7520d81c279",
+        "android_client_info": {
+          "package_name": "com.example.matala3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCueiQ4MeChEJIZG-q4Evc-ev1Vkx2ArUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
